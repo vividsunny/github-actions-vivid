@@ -1,0 +1,238 @@
+Admin
+==============
+pia@gmail.com
+test@123
+
+
+https://cv2apidev.medstars.co.uk/ aa url set kar ne
+
+
+http://localhost:3000/clinician/login
+
+
+http://localhost:3000/clinician/login
+vivid.megha@gmail.com
+123456
+
+create password field on login form
+- Done
+
+
+Email validation on login clinician page 
+after login redirect send appoinment
+
+login register validation
+clinician
+Patient
+
+
+
+http://localhost:3000/clinician/sendAppointment
+
+
+
+sendAppointment solve listing
+validation
+
+
+after send 
+
+
+http://localhost:3000/patient/login
+
+http://localhost:3000/patient/register
+
+vivid.parmarpriyanka@gmail.com
+Vivid@2021
+
+patient details
+---------------------
+vivid.test@gmail.com
+123456
+
+=============
+Password field on login form
+- Done
+
+Clinician Login Validation
+- Done
+
+After Login Redirect Send Appoinment Page
+- Done
+
+Fixed clinician/sendAppointment Page
+- Done
+
+Patient Login Validation
+- Done
+
+--------------------
+const setPaginationValue = (data) => {
+
+  var $no_pages = [];
+          let serach_string = "";
+
+          for (var i = 1; i <= data.last_page; i++) {
+            if (serach_string == "") {
+              $no_pages.push(i);
+            } else {
+              $no_pages.push(i);
+            }
+          }
+
+          if (data.current_page == data.last_page) {
+            setPrevdisabled(null)
+            setNextdisabled("1")
+          } else if (data.current_page == 1) {
+            setPrevdisabled("1")
+            setNextdisabled(null)
+          } else {
+            setPrevdisabled(null)
+            setNextdisabled(null)
+          }
+
+          if (data.last_page == 1) {
+            setPrevdisabled("1")
+            setNextdisabled("1")
+          }
+          if (data.data.length == 0) {
+            $no_pages = [];
+            setPrevdisabled("1")
+            setNextdisabled("1")
+          }
+
+          /* Set Current Page */
+          setCurrent_page(data.current_page)
+
+          /* Next Page URL */
+          if (data.next_page_url != null) {
+            if (serach_string == "") {
+
+              let url = data.next_page_url.substring(data.next_page_url.indexOf("=") + 1)
+              setNext_page_url(url)
+            } else {
+
+              let url = data.next_page_url.substring(data.next_page_url.indexOf("=") + 1)
+              setNext_page_url(url)
+
+            }
+          } else {
+            setNext_page_url(null)
+          }
+
+          /*  Prev Page URL */
+          if (data.prev_page_url != null) {
+            if (serach_string == "") {
+
+              let url = data.prev_page_url.substring(data.prev_page_url.indexOf("=") + 1)
+              setPrev_page_url(url)
+
+            } else {
+              let url = data.prev_page_url.substring(data.prev_page_url.indexOf("=") + 1)
+              setPrev_page_url(url)
+            }
+          } else {
+            setPrev_page_url(null)
+          }
+
+          setPaginationData($no_pages)
+          setFirst_page_url(data.first_page_url)
+          setLast_page_url(data.last_page_url)
+
+
+          console.log(current_page, "current_page")
+          console.log(last_page, "last_page")
+          console.log(per_page, "per_page")
+
+          console.log(prevdisabled, "prevdisabled")
+          console.log(nextdisabled, "nextdisabled")
+
+          console.log(first_page_url, "first_page_url")
+          console.log(next_page_url, "next_page_url")
+          console.log(last_page_url, "last_page_url")
+          console.log(prev_page_url, "prev_page_url")
+          console.log(paginationData, "paginationData") 
+          
+};
+==============================
+
+
+Assign user Remove
+
+Add new order 
+Change Source
+kapuraka -> pick me
+
+add source uber
+
+Groups
+---
+Selected Orgnization Customer
+
+Without Organization remove / or pass blank
+
+
+Add User
+--------------
+select doctor type
+	- Add Dropdown
+	- and Update
+	
+
+	SID : SK55dbc38da840205b1e68b7005a2c7414
+
+	Secret : VBWLE8CKIEUAz3npatcIOOXajpXU785C
+
+
+	SID
+SK1ce4633a97a97a08016ee9ba9814203a
+
+KEY TYPE
+Main
+
+SECRET
+dZmRhKwIwg9v1926ulu3LyIbcDMJenrD
+
+showCouponModal
+
+
+PayPal email ID: anissa@tinytailsbox.com
+Client ID: AVifYuR6n43y7HXUh67pB0soGfXmWXZu9umsdYKrjku6miVkTkDX0fGrHRa2dqOEfUgQCZZgGQiZqF1G
+Secret: EIJqcKhmACYaPyMHlFFA
+=============================================================
+
+nilaypatel.18@gmail.com
+vivid_082015
+
+
+priyankatailor2389@gmail.com
+12345678
+
+https://github.com/Well-technologies/flash-frontend.git
+
+
+git clone https://nilaypatel18:vivid_082015@github.com/Well-technologies/flash-frontend.git
+
+git clone https://nilaypatel18:vivid_082015@github.com/Well-technologies/flash-frontend.git
+
+git clone https://nilaypatel18@github.com/Well-technologies/flash-frontend.git
+
+vivid.sunnypatel@gmail.com
+
+git clone https://vividsunny@github.com/Well-technologies/flash-frontend.git
+
+
+http://medstars-alb-staging-1382383622.eu-west-2.elb.amazonaws.com/register/eyJpdiI6Im5DVjZ4bGFWVUp1WlFONzJJWG93SHc9PSIsInZhbHVlIjoieTEwNlI0SzVsUVNvTzlTYUhuTkorQT09IiwibWFjIjoiYTFkNjNiMzAwNWRkM2IyNzZhM2ViOGQwMzQ3YzM5Nzk5YzRlOGQ2ZTc3ODAyNDhiZjI3MmY2NTM3OThiN2I0MiJ9/patient
+
+
+
+
+if (localStorage.getItem("fnt_user") === null) {
+	
+}else{
+	
+}
+
+
+Met Gifted Zakelijk maken we zakelijke cadeaus een fluitje van een cent. Beloon de relaties die
+voor u het belangrijkst zijn en zorg dat ze terug blijven komen. Gemakkelijk te versturen. Geweldig om te ontvangen.
