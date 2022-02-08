@@ -1,22 +1,24 @@
-import React from 'react';
-
-import "aos/dist/aos.css";
-import "aos/dist/aos";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-import './css/custom-style.css';
-import './js/custom-js'
-
-
-import Home from './pages/Home';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <>
-          <Home />  
-    </>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
